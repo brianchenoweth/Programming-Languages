@@ -1,0 +1,9 @@
+#!/bin/bash
+
+	echo "Assignment #2-1, Brian Chenoweth, masc1367"
+	
+	name=`grep 100 $1 | cut -d "," -f 1`
+	couch=`grep $name $2`
+	echo $couch | cut -d "," -f 1 
+	echo $couch | cut -d "," -f 2
+	echo $couch | cut -d "," -f 3

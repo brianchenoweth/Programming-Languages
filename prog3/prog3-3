@@ -1,0 +1,17 @@
+./a.out 1
+rototat=atoi(.v[1])
+int rot=atoi(argv[1])
+
+if (let >=‘a’ && let <=‘z’)
+{
+	c=let+rot;
+	if (c < ‘a’)
+		c+=26
+	else if (c > ‘z’)
+		c-=26;
+}
+if (let >=‘A’ && let <=‘Z’)
+{
+	c=let+vot;
+}
+print (c)

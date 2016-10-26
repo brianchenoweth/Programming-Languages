@@ -1,0 +1,28 @@
+#!/bin/bash
+
+	echo "Assignment #2-2, Brian Chenoweth, masc1367"
+	
+	file=`grep -r stdio $1 | cut -d ":" -f 1`
+	
+	file1=`echo $file | cut -d " " -f1 `
+	file1a=`echo $file1 | cut -d "/" -f7`
+	cp ${file1} ${file1a}.c
+	echo ${file1a}.c
+	
+	
+	file2=`echo $file | cut -d " " -f2 `
+	file2a=`echo $file2 | cut -d "/" -f7`
+	cp ${file2} ${file2a}.c
+	echo ${file2a}.c
+
+	
+	file3=`echo $file | cut -d " " -f3 `
+	file3a=`echo $file3 | cut -d "/" -f8`
+	cp ${file3} ${file3a}.c
+	echo ${file3a}.c
+	
+	
+	file4=`echo $file | cut -d " " -f4 `
+	file4a=`echo $file4 | cut -d "/" -f8`
+	cp ${file4} ${file4a}.c
+	echo ${file4a}.c
